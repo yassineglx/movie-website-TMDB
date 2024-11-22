@@ -21,6 +21,7 @@ export function MovieCard({ movie }) {
   };
 
   return (
+
     <Card className="overflow-hidden">
       <CardHeader className="p-0">
         <div className="relative aspect-[2/3] w-full">
