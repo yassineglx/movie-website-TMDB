@@ -40,6 +40,7 @@ export function MovieList({ initialMovies, genres, fetchMoreMovies, search }) {
     setHasMore(true)
   }
 
+  console.log(movies)
   return (
     <div className="space-y-4">
       <ScrollArea className="w-full whitespace-nowrap rounded-md border">

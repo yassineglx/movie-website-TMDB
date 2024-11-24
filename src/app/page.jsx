@@ -5,7 +5,7 @@ import { FavoritesProvider } from '@/contexts/favorites-context'
 import { fetchMoreMovies } from './actions'
 
 export default async function Home({ searchParams }) {
-  const search = searchParams.search ?? '';
+  const search = searchParams?.search ?? '';
   let initialMovies = [];
   let genres = [];
   let error = null;
