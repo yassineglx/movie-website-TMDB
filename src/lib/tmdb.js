@@ -24,21 +24,20 @@ async function fetchFromTMDB(endpoint, params = {}) {
 
 export async function getPopularMovies(page = 1) {
   const data = await fetchFromTMDB('/movie/popular', { page: page.toString() });
- 
   return data.results;
 }
 
 export async function searchMovies(query, page = 1) {
   const data = await fetchFromTMDB('/search/movie', { query, page: page.toString() });
-  console.log(query)
   return data.results;
 }
-
 
 export async function getGenres() {
   const data = await fetchFromTMDB('/genre/movie/list');
   return data.genres;
 }
+
+
 // export const getCredits = async (query, id, payload) => {
 //   const response = await Api().get(`/${id}/${query}/credits`, { params: payload })
 //   return response

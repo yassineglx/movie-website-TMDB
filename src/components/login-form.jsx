@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import axios from 'axios'
 
 export function LoginForm() {
   const [username, setUsername] = useState('')
@@ -24,7 +25,16 @@ export function LoginForm() {
     } else {
       setError('Invalid username or password')
     }
+    console.log(login)
+
+    // try{
+    //   const response = await axios.post("/api/login",);
+    //  }catch(e){
+   
+    //  }
+    //  loginApi();
   }
+ 
 
   return (
     <Card className="w-[350px]">

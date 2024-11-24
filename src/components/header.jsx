@@ -36,6 +36,7 @@ export function Header() {
         <MainNav items={navItems} />
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <Search onSearch={handleSearch} />
+          
           <UserNav user={user} />
         </div>
       </div>
